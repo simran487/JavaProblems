@@ -9,10 +9,10 @@ public class bill {
             totalBill = 200;
         }
         else if(unit>=150 && unit<=400){
-            totalBill = 200+(unit-150)*3;
+            totalBill = 200+((unit-150)*3);
         }
         else if(unit>400 && unit<=700){
-            totalBill = 200+(3*(250))+(unit-400)*5;
+            totalBill = 200+(3*(250))+((unit-400)*5);
         }
         else if(unit>700 && unit<=900){
             totalBill = 200+(250*3)+(300*5)+((unit-700)*7);
