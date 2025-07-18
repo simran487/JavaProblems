@@ -7,10 +7,11 @@ public class SpyNo {
     int n = sc.nextInt();
     int count = 0;
     while(n>0){
-        int temp = n%2;
-        if(temp==1){
-            count++;
-        }
+        // int temp = n%2;
+        // if(temp==1){
+        //     count++;
+        // }
+        if(n%2==1)  count++;
         n/=2;
     }
     if(count%2==0){
