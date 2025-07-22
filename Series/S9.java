@@ -1,16 +1,20 @@
 import java.util.*;
-public class S3 {
+public class S9 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the limit: ");
         int n = sc.nextInt();
-        double sum = 0.0;
-        double t=0.0;
-        for(int i=1, j=2, k=1;k<=n;i++,j++,k++){
-             t = i/j;
-            sum+=t;
+        int no = 1;
+        int sum = 1;
+        if(n==1){
+            System.out.println(1);
+        }
+        else{
+            for(int i= 2;i<=n;i++){
+                no = no*2;
+                sum+=no;
+            }
         }
         System.out.println(sum);
-        sc.close();
     }
 }

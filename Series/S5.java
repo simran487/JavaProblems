@@ -1,4 +1,3 @@
-package Series;
 import java.util.*;
 public class S5 {
     public static void main(String[] args) {
