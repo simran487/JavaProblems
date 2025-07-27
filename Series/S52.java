@@ -7,10 +7,16 @@ public class S52 {
         int n = sc.nextInt();
         System.out.println("Enter the value of a: ");
         int a = sc.nextInt();
-        int f = 2;
-        for(int i=1;i<=n;i++){
-            int num = Math.pow(a,i);
-            
+        int p=1 , f=1;
+        for(double i=1;i<=n;i++){
+            double num = Math.pow(a,p);
+            p+=i;
+            double d = 2*i;
+            for(double j=1;j<=d;j++){
+                f *= j;
+            }
+            double s = num/f;
+            System.out.print(s +" ");
         }
 
     }
